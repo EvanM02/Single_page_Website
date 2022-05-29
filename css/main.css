@@ -10,7 +10,7 @@ body {
     font-family: 'Times New Roman', Times, serif;
     font-variant: small-caps;
     text-align: center;
-    padding-top: 1mm;
+    padding-top: 0.5in;
 }
 h3 {
     font-size: 50px;
@@ -76,7 +76,6 @@ NAVIGATION SECTION
 /* Add a black background color to the top navigation */
 .topnav {
     background-color:rgb(238, 236, 236);
-    overflow: hidden;
     position: fixed;
     top: 0;
     width: 110%;
@@ -91,7 +90,7 @@ NAVIGATION SECTION
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-    margin-left: 200px;
+    margin-left: 125px;
     border-radius: 2px;
     border-color: grey;
     border-width: 2px 2px 2px;
@@ -110,6 +109,21 @@ NAVIGATION SECTION
     background-color: #04AA6D;
     color: white;
   }
+
+/* ======================================================
+DROPDOWN MENU SECTION
+========================================================= */
+#dropdownMenuLink {
+    color: black;
+    font-weight: 600;
+    font-size: 15px;
+}
+.dropdown-menu {
+    padding-right:2in;
+    align-items: center;
+    background-color:rgb(241,241,241) ;
+}
+
 
 /*===========================================================
 PICTURES and information SECTION 
