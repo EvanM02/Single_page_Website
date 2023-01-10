@@ -357,6 +357,9 @@ footer p {
 }
 
 @media screen and (max-width: 556px) and (orientation: portrait) {
+  .webpage_title {
+    margin-top: 60px;
+  }
   .nav_bar_grid {
     row-gap: 10px;
     grid-template-columns: repeat(3, 1fr);
@@ -377,6 +380,9 @@ footer p {
 }
 
 @media screen and (max-width: 430px) and (orientation: portrait) {
+  .webpage_title {
+    margin-top: 60px;
+  }
   .photo_container_grid {
     margin-left: 25%;
   }
@@ -386,6 +392,9 @@ footer p {
 }
 
 @media screen and (max-width: 350px) and (orientation: portrait) {
+  .webpage_title {
+    margin-top: 60px;
+  }
   .photo_container_grid {
     margin-left: 20%;
   }
@@ -395,6 +404,9 @@ footer p {
 }
 
 @media screen and (max-width: 340px) and (orientation: portrait) {
+  .webpage_title {
+    margin-top: 60px;
+  }
   .nav_bar_grid {
     row-gap: 0px;
     grid-template-columns: repeat(1, 1fr);
