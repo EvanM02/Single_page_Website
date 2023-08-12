@@ -3,14 +3,7 @@ html {
 }
 
 body {
-  background: rgb(63, 94, 251);
-  background: radial-gradient(
-    circle,
-    rgba(63, 94, 251, 0.8483893557422969) 8%,
-    rgba(0, 236, 20, 0.8932072829131653) 34%,
-    rgba(140, 84, 192, 1) 59%,
-    rgba(252, 70, 107, 0.8147759103641457) 90%
-  );
+  background-color: wheat;
 }
 
 /* Scrollbar Styling */
@@ -104,7 +97,6 @@ body {
   font-weight: 900;
   font-family: "Courier New", Courier, monospace;
   font-variant: small-caps;
-  text-shadow: 2px 2px 3px rgb(154 185 185);
   text-align: center;
   margin-top: 1in;
 }
@@ -142,6 +134,7 @@ details > summary {
   width: 200px;
   margin-top: 4px;
   transition: all 0.2s ease-in-out;
+  margin-top: 10px;
 }
 details > summary:hover {
   box-shadow: 0px 0px;
@@ -171,6 +164,7 @@ details > p {
   margin: 0;
   box-shadow: 3px 3px 4px black;
   width: 300px;
+  margin-top: 2px;
 }
 details[open] > p {
   animation: fadeIn 2s;
@@ -192,7 +186,6 @@ details[open] > p {
   font-weight: 900;
   font-family: "Courier New", Courier, monospace;
   font-variant: small-caps;
-  text-shadow: 2px 2px 3px rgb(154 185 185);
   text-align: center;
   margin-top: 1in;
 }
@@ -200,29 +193,30 @@ details[open] > p {
   font-size: 1.5rem;
   font-weight: 900;
   font-family: "Courier New", Courier, monospace;
-  text-shadow: 2px 2px 3px rgb(154, 185, 185);
   padding-top: 20px;
   text-align: center;
 }
 
 .video_container_grid {
-  display: grid;
-  gap: 1.5rem;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1.5rem;
+  flex-wrap: wrap;
 }
 .video_container_para {
   font-size: 50px;
   font-weight: 900;
   font-family: "Courier New", Courier, monospace;
   font-variant: small-caps;
-  text-shadow: 2px 2px 3px rgb(154, 185, 185);
   padding-top: 20px;
 }
 
 iframe {
   border-radius: 8px;
   box-shadow: 3px 3px grey;
-  max-width: fit-content;
+  max-width: min-content;
 }
 
 /* Contact Form Styling */
@@ -270,29 +264,6 @@ footer p {
 
 /* Styling For Tablets In Landscape Orientation */
 @media screen and (max-width: 1174px) {
-  .video_container_para {
-    font-size: 2.5rem;
-  }
-}
-@media screen and (max-width: 1000px) {
-  .video_container_grid {
-    display: grid;
-    gap: 1.5rem;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .video_container:nth-child(1) {
-    margin-left: 10%;
-  }
-  .video_container:nth-child(2) {
-    grid-column-start: 2;
-    margin-left: 5%;
-  }
-  .video_container:nth-child(3) {
-    grid-column-start: 1;
-    grid-column-end: span 2;
-    grid-row-start: 2;
-    margin-left: 35%;
-  }
   @media screen and (max-width: 940px) {
     .photo_container_grid {
       margin-left: 8%;
@@ -326,34 +297,6 @@ footer p {
     grid-template-columns: repeat(2, 1fr);
     margin-left: 10%;
   }
-  @media screen and (max-width: 750px) and (orientation: portrait) {
-    .video_container_grid {
-      display: grid;
-      gap: 1.5rem;
-      grid-template-columns: repeat(1, 1fr);
-      margin-left: 30%;
-    }
-    .video_container:nth-child(1) {
-      grid-column-start: 1;
-      margin-left: 0%;
-    }
-    .video_container:nth-child(2) {
-      grid-column-start: 1;
-      grid-row-start: 2;
-      margin-left: 0%;
-    }
-    .video_container:nth-child(3) {
-      grid-column-start: 1;
-      grid-row-start: 3;
-      margin-left: 0%;
-    }
-  }
-}
-
-@media screen and (max-width: 750px) and (orientation: portrait) {
-  .video_container_grid {
-    margin-left: 25%;
-  }
 }
 
 @media screen and (max-width: 556px) and (orientation: portrait) {
@@ -374,9 +317,6 @@ footer p {
     grid-template-columns: repeat(1, 1fr);
     margin-left: 30%;
   }
-  .video_container_grid {
-    margin-left: 20%;
-  }
 }
 
 @media screen and (max-width: 430px) and (orientation: portrait) {
@@ -386,9 +326,6 @@ footer p {
   .photo_container_grid {
     margin-left: 25%;
   }
-  .video_container_grid {
-    margin-left: 15%;
-  }
 }
 
 @media screen and (max-width: 350px) and (orientation: portrait) {
@@ -397,9 +334,6 @@ footer p {
   }
   .photo_container_grid {
     margin-left: 20%;
-  }
-  .video_container_grid {
-    margin-left: 10%;
   }
 }
 
